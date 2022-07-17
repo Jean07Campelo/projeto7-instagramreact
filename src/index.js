@@ -1,8 +1,19 @@
 import ReactDOM from 'react-dom';
 
-function App () {
+import TopBar from './TopBar';
+import StoriesBox from './StoriesBox';
+import PostsBox from './PostsBox';
+import Sidebar from './Sidebar';
+
+function App() {
     return (
-        <h1>Teste</h1>
+        <div>
+            <TopBar />
+            <StoriesBox />
+            <PostsBox />
+            <Sidebar />
+        </div>
+
     )
 }
 
