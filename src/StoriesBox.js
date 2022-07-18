@@ -1,31 +1,23 @@
 export default function StoriesBox() {
     return (
-
-        <div className='corpo'>
-            <div className='esquerda'>
-
-                <div lass="stories">
+                <div className="stories">
 
                     {stories.map((storie) =>
-                        <div class="story">
-                            <div class="imagem">
+                        <div className="story">
+                            <div className="imagem">
                                 <img src={storie.storie_img} />
                             </div>
-                            <div class="usuario">
+                            <div className="usuario">
                                 {storie.user}
                             </div>
                         </div>)
                     }
 
-                    <div class="setinha">
+                    <div className="setinha">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
                     </div>
+
                 </div>
-
-            </div>
-
-        </div>
-
 
     )
 }
