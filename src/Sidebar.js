@@ -3,41 +3,41 @@ export default function Sidebar() {
 
         <div className='sidebar'>
 
-            <div class="usuario">
+            <div className="usuario">
                 <img src="assets/img/catanacomics.svg" />
-                <div class="texto">
+                <div className="texto">
                     <strong>catanacomics</strong>
                     Catana
                 </div>
             </div>
 
-            <div class="sugestoes">
-                <div class="titulo">
+            <div className="sugestoes">
+                <div className="titulo">
                     Sugestões para você
                     <div>Ver tudo</div>
                 </div>
 
                 {suggestions.map((suggestion) =>
-                    <div class="sugestao">
-                        <div class="usuario">
+                    <div className="sugestao">
+                        <div className="usuario">
                             <img src={suggestion.image_profile} />
-                            <div class="texto">
-                                <div class="nome">{suggestion.user_name}</div>
-                                <div class="razao">{suggestion.info_user}</div>
+                            <div className="texto">
+                                <div className="nome">{suggestion.user_name}</div>
+                                <div className="razao">{suggestion.info_user}</div>
                             </div>
                         </div>
 
-                        <div class="seguir">{suggestion.action}</div>
+                        <div className="seguir">{suggestion.action}</div>
                     </div>
                 )}
 
             </div>
 
-            <div class="links">
+            <div className="links">
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
             </div>
 
-            <div class="copyright">
+            <div className="copyright">
                 © 2021 INSTAGRAM DO FACEBOOK
             </div>
 
