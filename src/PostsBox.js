@@ -18,23 +18,23 @@ const posts = [
 ]
 
 const renderPosts = posts.map((post) =>
-        <div class="post">
-            <div class="topo">
-                <div class="usuario">
+        <div className ="post">
+            <div className ="topo">
+                <div className ="usuario">
                     <img src={post.image_profile} />
                     {post.userName}
                 </div>
-                <div class="acoes">
+                <div className ="acoes">
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div className ="conteudo">
                 <img src={post.user_publication} />
             </div>
 
-            <div class="fundo">
-                <div class="acoes">
+            <div className ="fundo">
+                <div className ="acoes">
                     <div>
                         <ion-icon name="heart-outline"></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
@@ -45,9 +45,9 @@ const renderPosts = posts.map((post) =>
                     </div>
                 </div>
 
-                <div class="curtidas">
+                <div className ="curtidas">
                     <img src={post.image_profile_liked} />
-                    <div class="texto">
+                    <div className ="texto">
                         Curtido por <strong>{post.profile_liked}</strong> e <strong>outras {post.total_liked} pessoas</strong>
                     </div>
                 </div>
