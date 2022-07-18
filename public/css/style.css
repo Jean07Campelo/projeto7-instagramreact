@@ -211,7 +211,11 @@
   .post:last-child {
     margin-bottom: 18px;
   }
-  
+
+  .postLiked {
+    color:#FF0000;
+  }
+
   .sidebar {
     padding-top: 24px;
     position: sticky;
