@@ -2,7 +2,6 @@ import ReactDOM from 'react-dom';
 
 import TopBar from './TopBar';
 import StoriesBox from './StoriesBox';
-import PostsBox from './PostsBox';
 import Sidebar from './Sidebar';
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
         <div>
             <TopBar />
             <StoriesBox />
-            <PostsBox />
             <Sidebar />
         </div>
 
