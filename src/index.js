@@ -1,14 +1,14 @@
 import ReactDOM from 'react-dom';
 
 import TopBar from './TopBar';
-import StoriesBox from './StoriesBox';
+import Container from './Container';
 import Sidebar from './Sidebar';
 
 function App() {
     return (
         <div>
             <TopBar />
-            <StoriesBox />
+            <Container />
             <Sidebar />
         </div>
 

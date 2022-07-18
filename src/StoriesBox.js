@@ -1,12 +1,8 @@
-import PostsBox from './PostsBox';
-
 export default function StoriesBox() {
     return (
 
         <div className='corpo'>
             <div className='esquerda'>
-
-                <PostsBox />
 
                 <div lass="stories">
 
