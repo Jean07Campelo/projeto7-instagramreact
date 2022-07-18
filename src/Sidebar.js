@@ -17,19 +17,7 @@ export default function Sidebar() {
                     <div>Ver tudo</div>
                 </div>
 
-                {suggestions.map((suggestion) =>
-                    <div className="sugestao">
-                        <div className="usuario">
-                            <img src={suggestion.image_profile} />
-                            <div className="texto">
-                                <div className="nome">{suggestion.user_name}</div>
-                                <div className="razao">{suggestion.info_user}</div>
-                            </div>
-                        </div>
-
-                        <div className="seguir">{suggestion.action}</div>
-                    </div>
-                )}
+                {renderSuggestions}
 
             </div>
 
@@ -60,3 +48,17 @@ const suggestions = [
     }
 
 ]
+
+const renderSuggestions = suggestions.map((suggestion) =>
+<div className="sugestao">
+    <div className="usuario">
+        <img src={suggestion.image_profile} />
+        <div className="texto">
+            <div className="nome">{suggestion.user_name}</div>
+            <div className="razao">{suggestion.info_user}</div>
+        </div>
+    </div>
+
+    <div className="seguir">{suggestion.action}</div>
+</div>
+);

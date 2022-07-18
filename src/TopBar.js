@@ -1,9 +1,3 @@
-const icons = [
-'paper-plane-outline', 
-'compass-outline', 
-'heart-outline', 
-'person-outline']
-
 export default function TopBar() {
     return (
         <div className ="navbar">
@@ -27,7 +21,7 @@ export default function TopBar() {
                 </div>
 
                 <div className ='icones'>
-                {icons.map((icon) => <ion-icon name={icon}></ion-icon>)}
+                {renderIcons}
                 </div>
                
 
@@ -38,3 +32,13 @@ export default function TopBar() {
         </div>
     )
 }
+
+const icons = 
+[
+    'paper-plane-outline', 
+    'compass-outline', 
+    'heart-outline', 
+    'person-outline'
+]
+
+const renderIcons = icons.map((icon) => <ion-icon name={icon}></ion-icon>);
